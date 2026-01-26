@@ -5,9 +5,10 @@
 
 let i = 1;
 while (i <= 40) {
+    // i++; solution to solve infinite loop
     if (i % 2 !== 0) {
-        continue
+        continue; // skip odd numbers, go to next iteration & avoid increment in loop. so creating infinite loop
     }
-    console.log('even number is: ',i);
-    i++;
+    console.log('even number is: ', i);
+    i++; 
 }
