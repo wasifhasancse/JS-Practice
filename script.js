@@ -1,11 +1,22 @@
-//display number from 55 to 85 and skip the numbers divisible by 5 using continue statement with while loop
-let i = 55;
-while (i <= 85) {
-    if (i % 5 !== 0) {
-        i++; //solve infinite loop issue
-        continue;
-    }
-    console.log(i);
-    i++;    
-}
+// Write a while loop that adds numbers starting from 1, but stops (using break) as soon as the sum reaches or exceeds 100
+// let sum = 0;
+// let number = 1;
+// while (true) {
+//   sum += number;
+//   if (sum >= 100) {
+//     break;
+//   }
+//   number++;
+// }
+// console.log("Sum:", sum); asnwer = 105
 
+let sum = 0;
+let number = 1;
+while (true) {
+  if (sum + number >= 100) {
+    break;
+  }
+  sum += number;
+  number++;
+}
+console.log("Sum:", sum); // answer = 91
