@@ -128,3 +128,9 @@ let matrix = [
 ];
 matrix[1][0] = 99;
 console.log(matrix);
+
+
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.reverse();
+console.log(arr);
+console.log(newArr);
