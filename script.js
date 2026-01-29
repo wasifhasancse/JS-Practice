@@ -8,6 +8,7 @@ let b = a[0];
 let c = a[a.length - 1];
 let d = b + " " + c;
 console.log(d);
+console.log(a.charAt(0), a.charAt(a.length - 1));
 
 // Replace a Substring Input: "JavaScript" Output: "JScript"
 b = a.replace("Java", "J");
@@ -151,14 +152,14 @@ const student = {
     subject: "HSC Physics",
     author: "Shahjahan Tapan",
     marks: 30,
-  }
+  },
 };
 console.log(student["physics"]["marks"]);
 // Count the number of properties or Keys.
 console.log(Object.keys(student).length);
 console.log(Object.values(student));
 // Adding a new nasted object in a object
-student['physics']['chemistry'] = {
+student["physics"]["chemistry"] = {
   subject: "HSC Chemistry",
   author: "Firoz Mahmud",
   marks: 35,
@@ -173,5 +174,48 @@ let enEmployee = {
   isStudent: true,
 };
 for (let key in enEmployee) {
-  console.log('key:', key, '|', 'value:', enEmployee[key], '|', 'type:', typeof(enEmployee[key]))
+  console.log(
+    "key:",
+    key,
+    "|",
+    "value:",
+    enEmployee[key],
+    "|",
+    "type:",
+    typeof enEmployee[key],
+  );
 }
+
+// Reverse each word in an array of words.
+a = ["apple", "banana", "orange", "mango", "grape"];
+c = [];
+for (let i of a) {
+  b = i.split("").reverse().join("");
+  c.push(b);
+}
+console.log(a);
+console.log(c);
+
+// Write a loop that goes from 1 to 100, but stops (using break) when it encounters the first square number (like 4, 9, 16, etc.)
+for (let i = 1; i <= 100; i++) {
+  let root = Math.floor(Math.sqrt(i));
+  console.log("Square root of", i, "is", root);
+
+  if (root * root === i && i !== 1) {
+    console.log("Square number found:", i);
+    break;
+  } else {
+    console.log(i);
+  }
+}
+// another way:
+for (let i = 1; i < 100; i++) {
+  if (Number.isInteger(Math.sqrt(i)) && i !== 1) {
+    break;
+  } else {
+    console.log(i);
+  }
+}
+
+let num = 5.55;
+console.log(num.toFixed(100));
