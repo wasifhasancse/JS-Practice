@@ -216,6 +216,3 @@ for (let i = 1; i < 100; i++) {
     console.log(i);
   }
 }
-
-let num = 5.55;
-console.log(num.toFixed(100));
