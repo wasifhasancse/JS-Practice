@@ -216,3 +216,56 @@ for (let i = 1; i < 100; i++) {
     console.log(i);
   }
 }
+
+// Count the number of times 'a' and 'A' appear in the string.
+a =
+  "I am learning JavaScript programming language. And I love it. A lot of people also love JavaScript.";
+count = 0;
+let countA = 0;
+for (let i = 0; i < a.length; i++) {
+  if (a[i] == "a") {
+    count++;
+  } else if (a[i] == "A") {
+    countA++;
+  }
+}
+console.log("Total 'a' in the string is:", count);
+console.log("Total 'A' in the string is:", countA);
+
+// Check if all the vowels are present in a given string.
+let vowelString = "I am learinng Weub Development";
+let vowel = "aeiou";
+let characterCheck = "";
+for (character of vowel) {
+  if (vowelString.toLowerCase().includes(character)) {
+    characterCheck += character;
+  }
+}
+console.log(characterCheck);
+if (characterCheck !== vowel) {
+  console.log("Not all vowels are present");
+} else {
+  console.log("All vowels are present");
+}
+
+// If a given string has either x, replace x by y. if the given string has X, replace it by Y.
+let challengeFour = "x marks the xspot, Xanks the plot, Xenophobe";
+for (character of challengeFour) {
+  if (character === "x") {
+    challengeFour = challengeFour.replace("x", "y");
+  } else if (character.includes("X")) {
+    challengeFour = challengeFour.replace("X", "Y");
+  }
+}
+console.log(challengeFour);
+
+// Capitalize the first letter of each word in a string.
+let challengeFive = "hello world from javascript";
+let challengeFiveWords = challengeFive.split(" ");
+let capitalizedStrings = [];
+for (let i = 0; i < challengeFiveWords.length; i++) {
+  let word = challengeFiveWords[i];
+  let capitalized = word[0].toUpperCase() + word.slice(1);
+  capitalizedStrings += capitalized + " ";
+}
+console.log(capitalizedStrings);
