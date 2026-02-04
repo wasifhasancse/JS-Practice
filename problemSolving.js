@@ -83,7 +83,7 @@ console.log("Grade is:", getGrade(85, 90, 92));
 // our team always plays 10 matches in the championship
 // 0 <= x <= 4
 // 0 <= y <= 4
-// -----------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 function points(games) {
   let scoreCheck;
   let points = 0;
@@ -112,7 +112,6 @@ let games = [
   "3:4",
 ];
 console.log("Total Points:", points(games));
-
 function showMessage(name) {
   return `Hello, ${name}. How are you?`;
 }
