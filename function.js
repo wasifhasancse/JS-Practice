@@ -334,3 +334,9 @@ console.log(
   ),
 );
 
+// Dom manupulation
+const buttonStyle = document.getElementById("myButton");
+
+buttonStyle.addEventListener('mouseover', function () {
+  buttonStyle.style.backgroundColor = 'red';
+})
